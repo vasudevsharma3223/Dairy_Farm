@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meadowbrook Dairy - Fresh Milk, Healthy Life</title>
+  <meta name="description" content="Pure organic A2 cow milk, traditional bilona ghee, fresh paneer, and thick curd straight from our pastures in Anand, Gujarat. Farm fresh daily.">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Sticky Navigation Menu -->
+  <header>
+    <div class="nav-container">
+      <a href="#hero" class="logo">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 15 C30 15 20 28 20 48 C20 62 27 68 33 75 C36 78 37 83 40 85 C43 87 46 88 50 88 C54 88 57 87 60 85 C63 83 64 78 67 75 C73 68 80 62 80 48 C80 28 70 15 50 15 Z" />
+          <circle cx="38" cy="40" r="4" fill="#FFF"/>
+          <circle cx="62" cy="40" r="4" fill="#FFF"/>
+          <path d="M38 58 Q50 64 62 58" stroke="#FFF" stroke-width="4" stroke-linecap="round" fill="none"/>
+          <path d="M12 40 C8 40 5 45 8 50 C12 55 18 52 18 45" stroke="#2A5A43" stroke-width="3" fill="none"/>
+          <path d="M88 40 C92 40 95 45 92 50 C88 55 82 52 82 45" stroke="#2A5A43" stroke-width="3" fill="none"/>
+        </svg>
+        <span>Meadowbrook</span>
+      </a>
+      
+      <button class="mobile-toggle" id="mobileToggleBtn" aria-label="Toggle Menu">☰</button>
+      
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#hero" class="nav-link active" data-tab="hero">Home</a></li>
+          <li><a href="#about" class="nav-link" data-tab="about">About</a></li>
+          <li><a href="#products" class="nav-link" data-tab="products">Products</a></li>
+          <li><a href="#why-choose-us" class="nav-link" data-tab="why-choose-us">Why Us</a></li>
+          <li><a href="#gallery" class="nav-link" data-tab="gallery">Gallery</a></li>
+          <li><a href="#testimonials" class="nav-link" data-tab="testimonials">Reviews</a></li>
+          <li><a href="#contact" class="nav-link" data-tab="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 1. HERO SECTION -->
+  <section class="hero-section" id="hero" style="background-image: url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1600&auto=format&fit=crop&q=80');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content hero-content-block fade-in">
+      <h1>Fresh Milk, Healthy Life</h1>
+      <p>Nourish your family with 100% pure, natural, and farm-fresh dairy products processed hygienically daily from purebred cows.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="#products" class="btn btn-primary">Our Fresh Products</a>
+        <a href="#contact" class="btn btn-outline">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. ABOUT US SECTION -->
+  <section class="about-section" id="about">
+    <div class="section-container">
+      <div class="about-grid">
+        <!-- Content -->
+        <div class="about-content fade-in">
+          <div style="text-align: left; margin-bottom: 1.5rem;" class="section-header">
+            <h2>Our Passion for Pure Dairy</h2>
+          </div>
+          <h3>Nurturing health and purity since 2011</h3>
+          <p>At Meadowbrook Organic Dairy, we believe in restoring the ancient purity of milk. Located in the lush pasturelands of Anand, Gujarat, our farm is home to purebred Gir and Sahiwal cows that graze freely on organic fodder.</p>
+          <p>Our commitment to quality ensures that zero hormones, chemical preservatives, or water adulterants ever touch our milk. We combine traditional bilona churning and modern hygienic processing to deliver health directly to your doorstep.</p>
+          
+          <ul class="about-bullets">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              100% Organic Pasture Fodder
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Zero Hormones or Antibiotics
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Bilona Churned Ghee
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Cold Chain Lock Delivery
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Image Frame -->
+        <div class="about-img-frame fade-in">
+          <img class="about-img" src="indian_gir_cow.png" alt="Majestic purebred Indian Desi Gir Cow standing in farm pastures">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCROLL ANIMATED COUNTERS BAR -->
+  <section class="counters-section" id="counters">
+    <div class="counters-grid">
+      <div class="counter-item">
+        <h3 class="counter-val" data-target="5000">0</h3>
+        <p>Happy Customers</p>
+      </div>
+      <div class="counter-item">
+        <h3 class="counter-val" data-target="12000">0</h3>
+        <p>Daily Litres Produced</p>
+      </div>
+      <div class="counter-item">
+        <h3 class="counter-val" data-target="15">0</h3>
+        <p>Years of Experience</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. OUR PRODUCTS SECTION (JSON Driven) -->
+  <section class="bg-cream" id="products">
+    <div class="section-container">
+      <div class="section-header">
+        <h2>Fresh From Our Creamery</h2>
+        <p>Order fresh organic dairy items produced daily and packed with absolute hygienic care.</p>
+      </div>
+      
+      <!-- Loaded dynamically via app.js -->
+      <div class="products-grid" id="productsGrid"></div>
+    </div>
+  </section>
+
+  <!-- 4. WHY CHOOSE US SECTION -->
+  <section id="why-choose-us">
+    <div class="section-container">
+      <div class="section-header">
+        <h2>Why Families Trust Us</h2>
+        <p>Our commitment to uncompromising purity and hygiene in every single drop of milk.</p>
+      </div>
+      
+      <div class="features-grid">
+        <!-- Card 1 -->
+        <div class="feature-card fade-in">
+          <div class="feature-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+          </div>
+          <h3>100% Pure Milk</h3>
+          <p>Single source milk directly from grass-fed cows. Zero powders, starches, or artificial thickening agents.</p>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="feature-card fade-in">
+          <div class="feature-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/></svg>
+          </div>
+          <h3>Hygienic Processing</h3>
+          <p>No-touch mechanized milking, rapid chilling pipelines, and strict glass bottling protocols.</p>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="feature-card fade-in">
+          <div class="feature-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
+          </div>
+          <h3>Farm Fresh Daily</h3>
+          <p>Delivered within 3-4 hours of morning milking. Ultimate freshness you can taste in every sip.</p>
+        </div>
+        
+        <!-- Card 4 -->
+        <div class="feature-card fade-in">
+          <div class="feature-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124l-.847-13.485c-.079-1.258-1.134-2.223-2.395-2.223H12.75M9 8.25l3 3m0 0l3-3m-3 3V2.25"/></svg>
+          </div>
+          <h3>Fast Delivery</h3>
+          <p>Temperature-controlled delivery vehicles preserve cold-chain freshness to your doorstep.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. FARM GALLERY SECTION -->
+  <section class="bg-cream" id="gallery">
+    <div class="section-container">
+      <div class="section-header">
+        <h2>Glimpses of Our Farm</h2>
+        <p>A transparent look into our organic pastures, purebred herd, and creamery facilities.</p>
+      </div>
+      
+      <!-- Filter controls -->
+      <div class="gallery-filters">
+        <button class="gallery-filter-btn active" data-filter="all">All Photos</button>
+        <button class="gallery-filter-btn" data-filter="pasture">Pastures</button>
+        <button class="gallery-filter-btn" data-filter="cows">Our Cows</button>
+        <button class="gallery-filter-btn" data-filter="processing">Processing</button>
+      </div>
+      
+      <!-- Responsive Gallery Grid -->
+      <div class="gallery-grid">
+        <!-- Item 1 -->
+        <div class="gallery-item fade-in" data-category="pasture">
+          <img src="indian_desi_cows.png" alt="Purebred Indian Desi Cows Grazing in Lush Pastures">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Item 2 (Gir Cow closeup) -->
+        <div class="gallery-item fade-in" data-category="cows">
+          <img src="indian_gir_cow.png" alt="Healthy humped Indian Gir Cow close-up">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Item 3 -->
+        <div class="gallery-item fade-in" data-category="processing">
+          <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=800&auto=format&fit=crop&q=80" alt="Mechanized glass bottling lines">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Item 4 -->
+        <div class="gallery-item fade-in" data-category="processing">
+          <img src="https://images.unsplash.com/photo-1486299267070-8382e214434b?w=800&auto=format&fit=crop&q=80" alt="Processing tanks in dairy clean rooms">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Item 5 -->
+        <div class="gallery-item fade-in" data-category="cows">
+          <img src="sahiwal_cow_close.png" alt="Healthy humped Indian Sahiwal Cow close-up">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Item 6 -->
+        <div class="gallery-item fade-in" data-category="pasture">
+          <img src="https://images.unsplash.com/photo-1473081556163-2a17de81fc97?w=800&auto=format&fit=crop&q=80" alt="Wildflower pastures and green meadows">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX MODAL OVERLAY -->
+  <div class="lightbox" id="lightboxModal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+      <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    </div>
+  </div>
+
+  <!-- 6. CUSTOMER TESTIMONIALS CAROUSEL -->
+  <section id="testimonials">
+    <div class="section-container">
+      <div class="section-header">
+        <h2>What Our Families Say</h2>
+        <p>Read review stories from parents, chefs, and dieticians who rely on our organic milk daily.</p>
+      </div>
+      
+      <div class="testimonials-carousel-container fade-in">
+        <div class="testimonial-track-wrapper">
+          <div class="testimonial-track" id="testimonialTrack">
+            <!-- Slide 1 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"Switching to Meadowbrook A2 milk is the best decision I made for my kids. The taste is sweet, thick, and exactly like the raw milk I drank during childhood in our village."</p>
+              <div class="testimonial-user">
+                <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&auto=format&fit=crop&q=80" alt="Rajesh Kumar Avatar">
+                <div>
+                  <div class="testimonial-name">Rajesh Kumar</div>
+                  <div class="testimonial-role">Parent, Ahmedabad</div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"As a dietician, I inspect food supply lines carefully. Meadowbrook's zero-hormone guarantee and cold-chain hygiene check out perfectly. The malai paneer is extremely fresh and pure."</p>
+              <div class="testimonial-user">
+                <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&auto=format&fit=crop&q=80" alt="Anjali Sharma Avatar">
+                <div>
+                  <div class="testimonial-name">Anjali Sharma</div>
+                  <div class="testimonial-role">Clinical Nutritionist, Vadodara</div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">"The granularity and aroma of their Bilona Gir Cow Ghee is outstanding. It elevates our sweets and traditional recipes. The consistency is unmatched."</p>
+              <div class="testimonial-user">
+                <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&auto=format&fit=crop&q=80" alt="Vikram Patel Avatar">
+                <div>
+                  <div class="testimonial-name">Chef Vikram Patel</div>
+                  <div class="testimonial-role">Head Chef, Sweet Heritage</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Dots indicators -->
+        <div class="testimonial-dots" id="testimonialDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CONTACT & MAPS SECTION -->
+  <section class="bg-cream" id="contact">
+    <div class="section-container">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p>Have questions about home delivery subscriptions or our processing? Contact us today.</p>
+      </div>
+      
+      <div class="contact-grid">
+        <!-- Form -->
+        <div class="contact-form-block fade-in">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="contactName">Full Name</label>
+              <input type="text" class="form-control" id="contactName" placeholder="Enter your name" required>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label for="contactPhone">Phone Number</label>
+                <input type="tel" class="form-control" id="contactPhone" placeholder="Enter 10 digit number" required>
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">Email Address</label>
+                <input type="email" class="form-control" id="contactEmail" placeholder="name@domain.com" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="contactMessage">Message / Delivery Request</label>
+              <textarea class="form-control" id="contactMessage" rows="5" placeholder="Let us know what you need..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 1rem;">
+              ✉ Submit Query
+            </button>
+          </form>
+        </div>
+        
+        <!-- Information -->
+        <div class="contact-info-card fade-in">
+          <h3>Meadowbrook Farms India</h3>
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div class="contact-detail-text">
+                <div class="lbl">Address</div>
+                <div class="val">Amul Dairy Road, Anand, Gujarat - 388001</div>
+              </div>
+            </div>
+            
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              </div>
+              <div class="contact-detail-text">
+                <div class="lbl">Customer Support</div>
+                <div class="val">+91 98765 43210</div>
+              </div>
+            </div>
+            
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <div class="contact-detail-text">
+                <div class="lbl">Email</div>
+                <div class="val">fresh@meadowbrook.in</div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Static maps embed -->
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14751.492265005952!2d72.95213605!3d22.56515865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e4e840d216f4d%3A0xa193d5084931a783!2sAmul%20Dairy!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. FOOTER SECTION -->
+  <footer>
+    <div class="footer-container">
+      <a href="#hero" class="footer-logo">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 15 C30 15 20 28 20 48 C20 62 27 68 33 75 C36 78 37 83 40 85 C43 87 46 88 50 88 C54 88 57 87 60 85 C63 83 64 78 67 75 C73 68 80 62 80 48 C80 28 70 15 50 15 Z" />
+        </svg>
+        <span>Meadowbrook</span>
+      </a>
+      
+      <ul class="footer-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#why-choose-us">Why Us</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-bottom">
+      <div>&copy; 2026 Meadowbrook Organic Dairy. All rights reserved. Registered under FSSAI Standards India.</div>
+      <div class="footer-socials">
+        <a href="#" class="social-link" aria-label="Facebook">
+          <svg fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Instagram">
+          <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051C.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Twitter">
+          <svg fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back-to-Top Button -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Back to Top">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"/></svg>
+  </button>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Application JS Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
